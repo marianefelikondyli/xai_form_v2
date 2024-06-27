@@ -123,7 +123,7 @@
     "question": "Is this individual a good or bad credit risk based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>Sex</th>\n        <th>Job</th>\n        <th>Housing</th>\n        <th>Saving Accounts</th>\n        <th>Checking Account</th>\n        <th>Purpose</th>\n    </tr>\n    <tr>\n        <td>male</td>\n        <td>Skilled</td>\n        <td>Own</td>\n        <td>moderate</td>\n        <td>little</td>\n        <td>Education</td>\n    </tr>\n</table>",
     "options": ["Bad", "Good"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 17,
@@ -131,7 +131,7 @@
     "question": "Is this individual a good or bad credit risk based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>Sex</th>\n        <th>Job</th>\n        <th>Housing</th>\n        <th>Saving Accounts</th>\n        <th>Checking Account</th>\n        <th>Purpose</th>\n    </tr>\n    <tr>\n        <td>female</td>\n        <td>Skilled</td>\n        <td>Rent</td>\n        <td>moderate</td>\n        <td>moderate</td>\n        <td>Business</td>\n    </tr>\n</table>",
     "options": ["Bad", "Good"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 18,
@@ -139,7 +139,7 @@
     "question": "Is this individual a good or bad credit risk based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>Sex</th>\n        <th>Job</th>\n        <th>Housing</th>\n        <th>Saving Accounts</th>\n        <th>Checking Account</th>\n        <th>Purpose</th>\n    </tr>\n    <tr>\n        <td>male</td>\n        <td>Unskilled Resident</td>\n        <td>own</td>\n        <td>quite rich</td>\n        <td>moderate</td>\n        <td>furniture/equipment</td>\n    </tr>\n</table>",
     "options": ["Bad", "Good"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 19,
@@ -147,7 +147,7 @@
     "question": "Is this individual a good or bad credit risk based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>Sex</th>\n        <th>Job</th>\n        <th>Housing</th>\n        <th>Saving Accounts</th>\n        <th>Checking Account</th>\n        <th>Purpose</th>\n    </tr>\n    <tr>\n        <td>male</td>\n        <td>Highly skilled</td>\n        <td>Rent</td>\n        <td>quite rich</td>\n        <td>moderate</td>\n        <td>business</td>\n    </tr>\n</table>",
     "options": ["Bad", "Good"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 20,
@@ -155,14 +155,14 @@
     "question": "Is this individual a good or bad credit risk based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>Sex</th>\n        <th>Job</th>\n        <th>Housing</th>\n        <th>Saving Accounts</th>\n        <th>Checking Account</th>\n        <th>Purpose</th>\n    </tr>\n    <tr>\n        <td>female</td>\n        <td>Unskilled-Non Resident</td>\n        <td>free</td>\n        <td>moderate</td>\n        <td>little</td>\n        <td>domestic appliances</td>\n    </tr>\n</table>",
     "options": ["Bad", "Good"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 21,
     "question": "How confident are you for your answer on a scale 1 to 5?",
     "type": "multiple-choice",
     "options": ["1: Not Confident", "2: Slightly Confident", "3: Moderately Confident", "4: Very Confident", "5: Extremely Confident"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@
 "3: Moderately Trust",
 "4: Very Trust",
 "5: Fully Trust"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 23,
@@ -184,13 +184,13 @@
 "3 - Moderately",
 "4 - Very",
 "5 - Completely"],
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 24,
     "question": "Could you describe in a few words the model?",
     "type": "text",
-    "image_src": "german_credit_multi.drawio.png"
+    "image_src": "german_credit_c4_5.drawio.png"
   },
   {
     "id": 25,
@@ -287,7 +287,7 @@
     "question": "Is this individual's annual income likely to exceed $50,000 based on these features?",
     "description": "<p>Below is a sample record from the Adult Income dataset. Based on the decision tree displayed, classify whether the individual's annual income exceeds $50,000.</p>\n  <p><b>Note:</b> Please use the zoom feature to examine the decision tree and understand how it works before making your classification.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>age</th>\n        <th>workclass</th>\n        <th>fnlwgt</th>\n        <th>education</th>\n        <th>education-num</th>\n        <th>marital-status</th>\n        <th>occupation</th>\n        <th>relationship</th>\n        <th>race</th>\n        <th>sex</th>\n        <th>capital-gain</th>\n        <th>capital-loss</th>\n        <th>hours-per-week</th>\n        <th>native-country</th>\n    </tr>\n    <tr>\n        <td>39</td>\n        <td>State-gov</td>\n        <td>77516</td>\n        <td>Bachelors</td>\n        <td>15</td>\n        <td>Never-married</td>\n        <td>Adm-clerical</td>\n        <td>Not-in-family</td>\n        <td>White</td>\n        <td>Male</td>\n        <td>5776</td>\n        <td>1502</td>\n        <td>52</td>\n        <td>United-States</td>\n    </tr>\n</table>",
     "options": [">50K", "<50K"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 37,
@@ -295,7 +295,7 @@
     "question": "Is this individual's annual income likely to exceed $50,000 based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree and understand how it works before making your classification.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>age</th>\n        <th>workclass</th>\n        <th>fnlwgt</th>\n        <th>education</th>\n        <th>education-num</th>\n        <th>marital-status</th>\n        <th>occupation</th>\n        <th>relationship</th>\n        <th>race</th>\n        <th>sex</th>\n        <th>capital-gain</th>\n        <th>capital-loss</th>\n        <th>hours-per-week</th>\n        <th>native-country</th>\n    </tr>\n    <tr>\n        <td>50</td>\n        <td>Self-emp-not-inc</td>\n        <td>83311</td>\n        <td>Bachelors</td>\n        <td>9</td>\n        <td>Married-civ-spouse</td>\n        <td>Exec-managerial</td>\n        <td>Husband</td>\n        <td>White</td>\n        <td>Male</td>\n        <td>4995</td>\n        <td>1002</td>\n        <td>13</td>\n        <td>United-States</td>\n    </tr>\n</table>",
     "options": [">50K", "<50K"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 38,
@@ -303,7 +303,7 @@
     "question": "Is this individual's annual income likely to exceed $50,000 based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree and understand how it works before making your classification.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>age</th>\n        <th>workclass</th>\n        <th>fnlwgt</th>\n        <th>education</th>\n        <th>education-num</th>\n        <th>marital-status</th>\n        <th>occupation</th>\n        <th>relationship</th>\n        <th>race</th>\n        <th>sex</th>\n        <th>capital-gain</th>\n        <th>capital-loss</th>\n        <th>hours-per-week</th>\n        <th>native-country</th>\n    </tr>\n    <tr>\n        <td>38</td>\n        <td>Private</td>\n        <td>215646</td>\n        <td>HS-grad</td>\n        <td>14</td>\n        <td>Married-civ-spouse</td>\n        <td>Other-service</td>\n        <td>Not-in-family</td>\n        <td>White</td>\n        <td>Male</td>\n        <td>4800</td>\n        <td>300</td>\n        <td>40</td>\n        <td>United-States</td>\n    </tr>\n</table>",
     "options": [">50K", "<50K"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 39,
@@ -311,7 +311,7 @@
     "question": "Is this individual's annual income likely to exceed $50,000 based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree and understand how it works before making your classification.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>age</th>\n        <th>workclass</th>\n        <th>fnlwgt</th>\n        <th>education</th>\n        <th>education-num</th>\n        <th>marital-status</th>\n        <th>occupation</th>\n        <th>relationship</th>\n        <th>race</th>\n        <th>sex</th>\n        <th>capital-gain</th>\n        <th>capital-loss</th>\n        <th>hours-per-week</th>\n        <th>native-country</th>\n    </tr>\n    <tr>\n        <td>53</td>\n        <td>Private</td>\n        <td>234721</td>\n        <td>11th</td>\n        <td>14</td>\n        <td>Divorced</td>\n        <td>Handlers-cleaners</td>\n        <td>Husband</td>\n        <td>Black</td>\n        <td>Male</td>\n        <td>3052</td>\n        <td>2280</td>\n        <td>40</td>\n        <td>United-States</td>\n    </tr>\n</table>",
     "options": [">50K", "<50K"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 40,
@@ -319,14 +319,14 @@
     "question": "Is this individual's annual income likely to exceed $50,000 based on these features?",
     "description": "<p><b>Note:</b> Please use the zoom feature to examine the decision tree and understand how it works before making your classification.</p>\n  <table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n        <th>age</th>\n        <th>workclass</th>\n        <th>fnlwgt</th>\n        <th>education</th>\n        <th>education-num</th>\n        <th>marital-status</th>\n        <th>occupation</th>\n        <th>relationship</th>\n        <th>race</th>\n        <th>sex</th>\n        <th>capital-gain</th>\n        <th>capital-loss</th>\n        <th>hours-per-week</th>\n        <th>native-country</th>\n    </tr>\n    <tr>\n        <td>28</td>\n        <td>Private</td>\n        <td>338409</td>\n        <td>Bachelors</td>\n        <td>13</td>\n        <td>Married-civ-spouse</td>\n        <td>Prof-specialty</td>\n        <td>Wife</td>\n        <td>Black</td>\n        <td>Female</td>\n        <td>4300</td>\n        <td>0</td>\n        <td>20</td>\n        <td>Cuba</td>\n    </tr>\n</table>",
     "options": [">50K", "<50K"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 41,
     "question": "How confident are you for your answer on a scale 1 to 5?",
     "type": "multiple-choice",
     "options": ["1: Not Confident", "2: Slightly Confident", "3: Moderately Confident", "4: Very Confident", "5: Extremely Confident"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 42,
@@ -337,7 +337,7 @@
 "3: Moderately Trust",
 "4: Very Trust",
 "5: Fully Trust"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 43,
@@ -348,13 +348,13 @@
 "3 - Moderately",
 "4 - Very",
 "5 - Completely"],
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 44,
     "question": "Could you describe in a few words the model?",
     "type": "text",
-    "image_src": "adult_income_wide.drawio.png"
+    "image_src": "adult_income_balanced.drawio.png"
   },
   {
     "id": 45,
