@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import Header from './Header';
 import Form from './Form';
 import QuestionList from './QuestionList';
-import questions from './QuestionList/questions.json';
+import questions from './QuestionList/questions_v2.json';
 import ThankYouPage from './ThankYouPage';
 import type { AnswerPayload } from './QuestionList/QuestionItem';
 import axios from 'axios';
@@ -31,7 +31,7 @@ const App = () => {
   const sendData = async () => {
   console.log(surveyData);
   try {
-    await axios.post('https://scavengerback.uphellas.gr/xai_form', surveyData);
+    await axios.post('https://scavengerback.uphellas.gr/xai_form_v2', surveyData);
     console.log('Data sent successfully');
   } catch (error) {
     console.error('Error sending data:', error);

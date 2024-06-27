@@ -1,6 +1,6 @@
 import Tooltip from '@/components/ui/ToolTip';
 import QuestionItem from './QuestionItem';
-import questions from './questions.json';
+import questions from './questions_v2.json';
 import type { AnswerPayload } from './QuestionItem';
 import ImageViewer from '@/App/QuestionList/ImageViewer';
 
