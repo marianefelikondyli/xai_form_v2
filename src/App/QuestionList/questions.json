@@ -17,7 +17,7 @@
     "id": 3,
     "type": "multiple-choice",
     "question": "Will tennis be played under these weather conditions?",
-    "description": "<p>The <span style=\"color: green;\">green button</span> zooms in</p>\n<p>The <span style=\"color: red;\">red button</span> zooms out</p>\n<p>The <span style=\"color: #d0d000;\">yellow button</span> reverts zooming</p>\n<p>You can also zoom in and out by clicking.</p>\n<p>In the decision tree, you may encounter nodes with splits that include a category labeled <b>\"Other\"</b>. This category represents any value that is not explicitly listed in the other split categories. For example, if you see a node with the attribute \"Temperature\" and splits into \"Hot\" and \"Other,\" any temperature value that is not \"Hot\" should follow the \"Other\" branch.</p>\n<p>Example of classification data:</p>\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n      <th>Outlook</th>\n      <th>Temperature</th>\n      <th>Humidity</th>\n      <th>Windy</th>\n    </tr>\n    <tr>\n      <td>Sunny</td>\n      <td>Hot</td>\n      <td>High</td>\n      <td>False</td>\n    </tr>\n  </table>",
+    "description": "<p>You can hover and use the mouse for zooming or the buttons:</p><p>The <span style=\"color: green;\">green button</span> zooms in</p>\n<p>The <span style=\"color: red;\">red button</span> zooms out</p>\n<p>The <span style=\"color: #d0d000;\">yellow button</span> reverts zooming</p>\n<p>You can also zoom in and out by clicking.</p>\n<p>In the decision tree, you may encounter nodes with splits that include a category labeled <b>\"Other\"</b>. This category represents any value that is not explicitly listed in the other split categories. For example, if you see a node with the attribute \"Temperature\" and splits into \"Hot\" and \"Other,\" any temperature value that is not \"Hot\" should follow the \"Other\" branch.</p>\n<p>Example of classification data:</p>\n<table border=\"1\" cellspacing=\"0\" cellpadding=\"5\">\n    <tr>\n      <th>Outlook</th>\n      <th>Temperature</th>\n      <th>Humidity</th>\n      <th>Windy</th>\n    </tr>\n    <tr>\n      <td>Sunny</td>\n      <td>Hot</td>\n      <td>High</td>\n      <td>False</td>\n    </tr>\n  </table>",
     "options": ["Yes", "No"],
     "image_src": "play_tennis.drawio.png"
   },
@@ -359,7 +359,17 @@
   {
     "id": 45,
     "question": "In the diagram above which feature do you think that is the most important in the classification process?",
-    "type": "text",
+    "type": "multiple-choice",
+    "options": [
+      "sex",
+      "age",
+      "race",
+      "juv_fel_count",
+      "juv_misd_count",
+      "juv_other_count",
+      "priors_count",
+      "c_charge_degree"
+    ],
     "image_src": "high_low.drawio.png"
   }
 ]
