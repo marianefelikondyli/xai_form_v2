@@ -9,10 +9,10 @@ interface FormProps {
 const Form = ({ onSubmit }: FormProps) => {
   const [errors, setErrors] = useState({
     fullname: '',
-      email: '',
-      familiar_ai: '',
-      familiar_xai: '',
-      familiar_dt: '',
+    email: '',
+    familiar_ai: '',
+    familiar_xai: '',
+    familiar_dt: '',
   });
 
   const handleSubmit = (event: SyntheticEvent) => {
@@ -20,20 +20,21 @@ const Form = ({ onSubmit }: FormProps) => {
     const formData = new FormData(event.target as HTMLFormElement);
 
     setErrors({
-        fullname: !formData.get('fullname') ? 'Familiarity is required' : '',
-        email: !formData.get('email') ? 'Familiarity is required' : '',
-        familiar_ai: !formData.get('familiar_ai') ? 'Familiarity is required' : '',
+      fullname: '',
+      email: '',
+      familiar_ai: !formData.get('familiar_ai') ? 'Familiarity is required' : '',
       familiar_xai: !formData.get('familiar_xai') ? 'Familiarity is required' : '',
       familiar_dt: !formData.get('familiar_dt') ? 'Familiarity is required' : '',
     });
 
-    const fullname = formData.get('fullname') ?? '';
-    const email = formData.get('email') ?? '';
-    const familiar_ai = formData.get('familiar_ai') ?? '';
-    const familiar_xai = formData.get('familiar_xai') ?? '';
-    const familiar_dt = formData.get('familiar_dt') ?? '';
+    const fullname = formData.get('fullname')?.toString() ?? '';
+    const email = formData.get('email')?.toString() ?? '';
+    const familiar_ai = formData.get('familiar_ai')?.toString() ?? '';
+    const familiar_xai = formData.get('familiar_xai')?.toString() ?? '';
+    const familiar_dt = formData.get('familiar_dt')?.toString() ?? '';
+
     if (familiar_ai && familiar_xai && familiar_dt) {
-      onSubmit({ fullname, email,  familiar_ai, familiar_xai, familiar_dt} as Record<string, string>);
+      onSubmit({ fullname, email, familiar_ai, familiar_xai, familiar_dt } as Record<string, string>);
     }
   };
 
@@ -51,6 +52,8 @@ const Form = ({ onSubmit }: FormProps) => {
         id={'email'}
         label={'Email'}
         name={'email'}
+        error_message={errors['email']}
+        has_error={errors['email'].length > 0}
       />
       <Select
         name={'familiar_ai'}
@@ -58,35 +61,35 @@ const Form = ({ onSubmit }: FormProps) => {
         options={[
           { label: 'Professor', value: 'professor' },
           { label: 'Post Graduate in relevant degree', value: 'post' },
-          { label: 'Undergraduate in relevant degree', value: 'under' },
-          { label: 'Some familiarity', value: 'some' },
-            {label: 'Unfamiliar', value: 'unfamiliar'}
+          { label: 'Student in relevant degree and related thesis', value: 'under' },
+          { label: 'Student in relevant degree', value: 'some' },
+          { label: 'Unfamiliar', value: 'unfamiliar' }
         ]}
         error_message={errors['familiar_ai']}
         has_error={errors['familiar_ai'].length > 0}
       />
-        <Select
+      <Select
         name={'familiar_xai'}
         label={'XAI familiarity'}
         options={[
           { label: 'Professor', value: 'professor' },
           { label: 'Post Graduate in relevant degree', value: 'post' },
-          { label: 'Undergraduate in relevant degree', value: 'under' },
-          { label: 'Some familiarity', value: 'some' },
-            {label: 'Unfamiliar', value: 'unfamiliar'}
+          { label: 'Student in relevant degree and related thesis', value: 'under' },
+          { label: 'Student in relevant degree', value: 'some' },
+          { label: 'Unfamiliar', value: 'unfamiliar' }
         ]}
         error_message={errors['familiar_xai']}
         has_error={errors['familiar_xai'].length > 0}
       />
-        <Select
+      <Select
         name={'familiar_dt'}
         label={'Decision Trees familiarity'}
         options={[
           { label: 'Professor', value: 'professor' },
           { label: 'Post Graduate in relevant degree', value: 'post' },
-          { label: 'Undergraduate in relevant degree', value: 'under' },
-          { label: 'Some familiarity', value: 'some' },
-            {label: 'Unfamiliar', value: 'unfamiliar'}
+          { label: 'Student in relevant degree and related thesis', value: 'under' },
+          { label: 'Student in relevant degree', value: 'some' },
+          { label: 'Unfamiliar', value: 'unfamiliar' }
         ]}
         error_message={errors['familiar_dt']}
         has_error={errors['familiar_dt'].length > 0}
