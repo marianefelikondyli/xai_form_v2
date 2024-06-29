@@ -57,39 +57,39 @@ const Form = ({ onSubmit }: FormProps) => {
       />
       <Select
         name={'familiar_ai'}
-        label={'AI familiarity'}
+        label={'AI familiarity*'}
         options={[
-          { label: 'Professor', value: 'professor' },
-          { label: 'Post Graduate in relevant degree', value: 'post' },
-          { label: 'Student in relevant degree and related thesis', value: 'under' },
-          { label: 'Student in relevant degree', value: 'some' },
-          { label: 'Unfamiliar', value: 'unfamiliar' }
+          { label: '5 (i.e.Professor)', value: 'professor' },
+          { label: '4 (i.e. Post Graduate in relevant degree)', value: 'post' },
+          { label: '3 (i.e. Student in relevant degree and related thesis)', value: 'under' },
+          { label: '2 (i.e. Student in relevant degree)', value: 'some' },
+          { label: '1 (i.e. Unfamiliar)', value: 'unfamiliar' }
         ]}
         error_message={errors['familiar_ai']}
         has_error={errors['familiar_ai'].length > 0}
       />
       <Select
         name={'familiar_xai'}
-        label={'XAI familiarity'}
+        label={'XAI familiarity*'}
         options={[
-          { label: 'Professor', value: 'professor' },
-          { label: 'Post Graduate in relevant degree', value: 'post' },
-          { label: 'Student in relevant degree and related thesis', value: 'under' },
-          { label: 'Student in relevant degree', value: 'some' },
-          { label: 'Unfamiliar', value: 'unfamiliar' }
+          { label: '5 (i.e.Professor)', value: 'professor' },
+          { label: '4 (i.e. Post Graduate in relevant degree)', value: 'post' },
+          { label: '3 (i.e. Student in relevant degree and related thesis)', value: 'under' },
+          { label: '2 (i.e. Student in relevant degree)', value: 'some' },
+          { label: '1 (i.e. Unfamiliar)', value: 'unfamiliar' }
         ]}
         error_message={errors['familiar_xai']}
         has_error={errors['familiar_xai'].length > 0}
       />
       <Select
         name={'familiar_dt'}
-        label={'Decision Trees familiarity'}
+        label={'Decision Trees familiarity*'}
         options={[
-          { label: 'Professor', value: 'professor' },
-          { label: 'Post Graduate in relevant degree', value: 'post' },
-          { label: 'Student in relevant degree and related thesis', value: 'under' },
-          { label: 'Student in relevant degree', value: 'some' },
-          { label: 'Unfamiliar', value: 'unfamiliar' }
+          { label: '5 (i.e.Professor)', value: 'professor' },
+          { label: '4 (i.e. Post Graduate in relevant degree)', value: 'post' },
+          { label: '3 (i.e. Student in relevant degree and related thesis)', value: 'under' },
+          { label: '2 (i.e. Student in relevant degree)', value: 'some' },
+          { label: '1 (i.e. Unfamiliar)', value: 'unfamiliar' }
         ]}
         error_message={errors['familiar_dt']}
         has_error={errors['familiar_dt'].length > 0}
