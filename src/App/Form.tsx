@@ -70,7 +70,7 @@ const Form = ({ onSubmit }: FormProps) => {
       />
       <Select
         name={'familiar_xai'}
-        label={'XAI familiarity*'}
+        label={'Explainable AI familiarity*'}
         options={[
           { label: '5 (i.e.Professor)', value: 'professor' },
           { label: '4 (i.e. Post Graduate in relevant degree)', value: 'post' },
